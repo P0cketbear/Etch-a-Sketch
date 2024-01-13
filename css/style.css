@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+}
+
+.maincontainer {
+  display: flex;
+  background-color: grey;
+  justify-content: space-evenly;
+}
+
+/***** Contenedor de divs apra dibujar *****/
+.gridContainer {
+  width: 520px;
+  height: 520px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gridContainer div {
+  background-color: whitesmoke;
+}
+/***** Contenedor de divs apra dibujar *****/
+
+/***** buttons section *****/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/***** End buttons section *****/
