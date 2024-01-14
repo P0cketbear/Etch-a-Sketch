@@ -67,4 +67,8 @@ button {
   font-weight: bold;
   margin: 5%;
 }
+
+p {
+  background-color: whitesmoke;
+}
 /***** End buttons section *****/
