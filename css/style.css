@@ -8,6 +8,9 @@
 }
 h1 {
   font-size: 72px;
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 body {
