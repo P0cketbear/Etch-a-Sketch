@@ -6,16 +6,16 @@
 
 // Botones
 
-let brushColor = "gold";
+let brushColor = "White";
 
-const btn_black = document.querySelector('#btn-black')
-btn_black.addEventListener('click', () => {
-    brushColor = "black";
+const btn_white = document.querySelector('#btn-white')
+btn_white.addEventListener('click', () => {
+    brushColor = "white";
 })
 
-const btn_green = document.querySelector('#btn-green')
-btn_green.addEventListener('click', () => {
-    brushColor = "greenyellow";
+const btn_yellow = document.querySelector('#btn-yellow')
+btn_yellow.addEventListener('click', () => {
+    brushColor = "gold";
 })
 
 const btn_blue = document.querySelector('#btn-blue')
@@ -33,13 +33,15 @@ btn_rainbow.addEventListener('click', () => {
     brushColor = "rainbow";
 })
 
-
 const btn_size = document.querySelector('#btn-size')
 btn_size.addEventListener('click', () => {
     resize()
 })
 
-
+const btn_reset = document.querySelector('#btn-reset')
+btn_reset.addEventListener('click', () => {
+    genGrid(32)
+})
 
 // funcion conseguida en stackoverflow
 
@@ -50,9 +52,6 @@ function colorAleatorio() {
     }
     return "#" + color;
 }
-
-
-
 
 function resize() {
     let newSize = prompt('Enter the number of tiles to set a new width (Min 2, Max 100)');
@@ -71,7 +70,7 @@ function resize() {
 
 }
 
-genGrid(16);
+genGrid(32);
 
 
 function genGrid(gridSize) {
@@ -84,8 +83,8 @@ function genGrid(gridSize) {
 
     for (let index = 0; index < (gridSize * gridSize); index++) {
         let gDiv = document.createElement('div');
-        gDiv.style.width = (520 / gridSize) + "px";
-        gDiv.style.height = (520 / gridSize) + "px";
+        gDiv.style.width = (400 / gridSize) + "px";
+        gDiv.style.height = (400 / gridSize) + "px";
         gDiv.setAttribute('id', 'gridDiv');
         gridCont.appendChild(gDiv);
 
